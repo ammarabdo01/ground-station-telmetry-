@@ -1,0 +1,28 @@
+# 🛰️ Ground Station Telemetry Dashboard
+
+An interactive real-time spacecraft telemetry replay engine, rule-based health inspector, and machine learning anomaly detector built with Python. Designed as a **Proof of Concept (POC)** inspired by ground control operations in aerospace systems.
+
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.30-red)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1.3-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+## ✨ Core Functionalities
+
+- **Telemetry Replay Engine**: Simulates live time-series frame ingestion from orbital missions.
+- **Rule-Based Safety Inspection**: Monitors critical flight thresholds for battery voltage and system thermal levels.
+- **AI Anomaly Detection**: Employs an `IsolationForest` model to detect subtle multi-variable telemetry deviations.
+- **3D Trajectory Visualization**: Plots state-space vehicle dynamics in dynamic 3D representations.
+- **Incident Report Export**: Generates instant CSV logs of mission anomalies.
+
+## 🚀 Execution Guide
+
+```bash
+# 1. Activate Environment
+source venv/bin/activate
+
+# 2. Install Requirements
+pip install -r requirements.txt
+
+# 3. Launch App
+PYTHONPATH=. streamlit run app.py
