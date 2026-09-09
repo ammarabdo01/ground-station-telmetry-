@@ -1,0 +1,2 @@
+# ground-station-telmetry-
+A real-time spacecraft telemetry replay engine featuring rule-based health thresholds, Isolation Forest AI anomaly detection, and 3D trajectory tracking.
